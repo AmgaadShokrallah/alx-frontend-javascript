@@ -1,3 +1,4 @@
+export default getListStudentIds;
 const getListStudentsIds = (listStudents) => {
   let listStudentIds = [];
   if (!(listStudents instanceof Array)) {
@@ -6,5 +7,3 @@ const getListStudentsIds = (listStudents) => {
   listStudentIds = listStudents.map((student) => student.id);
   return listStudentIds;
 };
-
-export default getListStudentIds;
